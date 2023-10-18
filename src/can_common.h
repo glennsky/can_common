@@ -158,6 +158,7 @@ public:
     uint32_t fid;         // family ID
     uint32_t timestamp;   // CAN timer value when mailbox message was received.
     uint8_t rrs;          // RRS for CAN-FD (optional 12th standard ID bit)
+    uint8_t brs;          // BRS for CAN-FD bit rate switch
     uint8_t priority;     // Priority but only important for TX frames and then only for special uses. (0-31)
     uint8_t extended;     // Extended ID flag
     uint8_t fdMode;       // 0 = normal CAN frame, 1 = CAN-FD frame
